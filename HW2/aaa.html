@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link rel="icon" href="images/6.ico" type="image/x-icon"  >
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body class="sub_page">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/圖標.png" alt="" />
+              </a>
+              <div class="navbar-collapse" id="">
+                
+    
+                <div class="custom_menu-btn">
+                  <button onclick="openNav()">
+                    <span class="s-1">
+    
+                    </span>
+                    <span class="s-2">
+    
+                    </span>
+                    <span class="s-3">
+    
+                    </span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a href="index.html">HOME</a>
+                  <a href="about.html">ABOUT</a>
+            
+                  <a href="contact.html">CONTACT US</a>
+                  <a href="aaa.html">COMMODITY</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+<!-- navbar -->
+<nav class="navbar">
+    <ul class="fixed-nav ">
+      <li>
+        <div class="nav-icon">服裝商品照</div>
+      </li>
+      
+     
+    </ul>
+  </nav>
+  <!-- header -->
+  <div id="header" class="jumbotron">
+    <div class="container">
+      <h1>二手商品</h1>
+      <p>二手衣服回收轉賣,讓資源不浪費</p>
+    </div>
+  </div>
+  <!-- header end -->
+  
+  
+  
+  <!-- pictures end -->
+  
+  <!-- productSection -->
+  <section id="productSection" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">產品列表</h1>
+      <div id="productRow" class="row"></div>
+    </div>
+  </section>
+  
+  <!-- modal -->
+   <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">購物車</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <table class="table table-border">
+                      <thead>
+                          <tr>
+                              <th>產品名稱</th>
+                              <th class="text-right">單價</th>
+                              <th class="text-right">數量</th>
+                              <th class="text-right">總計</th>
+                          </tr>
+                      </thead>
+                      <tbody id="cartTableBody"></tbody>
+                      <tfoot id="cartTableFoot"></tfoot>
+                  </table>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" id="emptyCartBtn">清空購物車</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+              </div>
+          </div>
+      </div>
+  </div> 
+  
+  <!-- modal -->
+  <!-- jquery.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- popper.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script> 
+  <!-- bootstrap.js -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+      crossorigin = "anonymous" ></script> 
+  <!-- sweetalert.js -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> 
+  <!-- products.js -->
+  <script src="./js/products.js"></script>
+  <script src="./js/about.js"></script>
+  <!-- main.js -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- <script src="./js/cart.js"></script> -->
